@@ -1,0 +1,6 @@
+{
+  "name": "@portfolio/shop",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "dev": "vite --host 0.0.0.0", "build": "vite build --base=./" }
+}

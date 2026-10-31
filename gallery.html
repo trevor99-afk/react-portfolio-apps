@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>React Portfolio Apps</title>
+  <meta name="description" content="Ten small React and TypeScript demo apps by Mohamed Alijate.">
+  <style>
+    :root { color-scheme: light dark; --bg: #fbfaf7; --card: #fff; --ink: #1b1d21; --muted: #5f6570; --line: #e4e2dc; --accent: #0f766e; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #111316; --card: #1a1d21; --ink: #eceef1; --muted: #a0a7b2; --line: #2c3036; --accent: #5eead4; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 980px; margin: 0 auto; padding: 40px 20px 56px; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; }
+    .lead { margin: 0 0 28px; color: var(--muted); }
+    a { color: var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+    .app { display: block; padding: 16px 18px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; color: inherit; text-decoration: none; }
+    .app:hover { border-color: var(--accent); }
+    .app strong { display: block; color: var(--accent); }
+    .app span { color: var(--muted); font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>React Portfolio Apps</h1>
+    <p class="lead">Ten small React and TypeScript demos with sample data. Back to the <a href="https://trevor99-afk.github.io/">portfolio</a>, or see the <a href="https://github.com/trevor99-afk/react-portfolio-apps">code</a>.</p>
+    <div class="grid">
+      <a class="app" href="finance/"><strong>Pocketwise</strong><span>Expense tracking, category filters and budgets</span></a>
+      <a class="app" href="recipes/"><strong>Pantry Pal</strong><span>Ingredient search, dietary filters and favorites</span></a>
+      <a class="app" href="habits/"><strong>Little Wins</strong><span>Habit check-ins, streaks and weekly progress</span></a>
+      <a class="app" href="events/"><strong>Out &amp; About</strong><span>Event discovery, category filters and saved events</span></a>
+      <a class="app" href="jobs/"><strong>Next Step</strong><span>Application pipeline, status updates and follow-ups</span></a>
+      <a class="app" href="shop/"><strong>Good Things</strong><span>Product catalog, cart quantities and totals</span></a>
+      <a class="app" href="flashcards/"><strong>Recall</strong><span>Flip cards, deck navigation and study progress</span></a>
+      <a class="app" href="a11y/"><strong>A11y Lens</strong><span>HTML snippet checks with actionable findings</span></a>
+      <a class="app" href="teamboard/"><strong>Teamspace</strong><span>Project board, task status and task creation</span></a>
+      <a class="app" href="weather/"><strong>Skycast</strong><span>City search, forecast cards and a unit toggle</span></a>
+    </div>
+  </main>
+</body>
+</html>

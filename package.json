@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-projects",
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
+  "scripts": {
+    "dev:finance": "npm run dev --workspace=@portfolio/finance",
+    "dev:recipes": "npm run dev --workspace=@portfolio/recipes",
+    "dev:habits": "npm run dev --workspace=@portfolio/habits",
+    "dev:events": "npm run dev --workspace=@portfolio/events",
+    "dev:jobs": "npm run dev --workspace=@portfolio/jobs",
+    "dev:shop": "npm run dev --workspace=@portfolio/shop",
+    "dev:flashcards": "npm run dev --workspace=@portfolio/flashcards",
+    "dev:a11y": "npm run dev --workspace=@portfolio/a11y",
+    "dev:teamboard": "npm run dev --workspace=@portfolio/teamboard",
+    "dev:weather": "npm run dev --workspace=@portfolio/weather",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
